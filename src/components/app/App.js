@@ -5,7 +5,7 @@ import { Section } from 'components/section/Section';
 import { Statistics } from 'components/statistics/Statistics';
 import { FeedbackOptions } from 'components/feedbackOptions/FeedbackOptions';
 
-export function App() {
+export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -54,7 +54,7 @@ export function App() {
       <GlobalStyle />
     </Layout>
   );
-}
+};
 
 // export class App extends Component {
 //   state = {
